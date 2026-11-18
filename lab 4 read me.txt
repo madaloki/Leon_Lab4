@@ -1,0 +1,30 @@
+Introduction to Web Development - Lab 4
+Michael Leon
+
+Two Player Tic-Tac-Toe
+
+PLAY THE GAME
+ https://leon-lab4.onrender.com/
+
+Student will generate QR Code before class. 
+
+The game runs on a computer or a phone. Open the link in two windows or on
+two devices. The first player is X, the second is O, and anyone else joins
+as a spectator.
+
+FILES
+- server.js: Node.js and Express server. WebSockets keep the players in sync.
+- package.json / package-lock.json: project info and libraries
+- public/index.html: page layout
+- public/style.css: blue theme
+- public/client.js: draws the board and talks to the server
+
+WHAT I CHANGED FOR RENDER
+1. server.js: the port now comes from process.env.PORT (3000 is the fallback),
+   and the server listens on 0.0.0.0 so Render can reach it.
+2. client.js: the WebSocket uses wss:// on an https page and ws:// on
+   http://localhost, so the same code works in both places.
+
+
+Link: https://leon-lab4.onrender.com/
+

@@ -1,0 +1,13 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "Michael Leon - Lab 4 two player Tic-Tac-Toe with WebSockets",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  }
+}
